@@ -27,7 +27,7 @@ const CurrencyModal = () => {
   return (
     currencyModal && (
       <div className="select-modal">
-        <div className="select-modal-card vivify popInBottom">
+        <div className="select-modal-card popInBottom">
           <div className="close-select-button" onClick={() => closeModal()}>
             <i className="bx bx-x" id="closeToken"></i>
           </div>
