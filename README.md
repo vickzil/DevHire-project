@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a REACT Assessment Application for DevHire. It is responsive and API featured.
+
+## Clone Project
+
+On your Editor Terminal, you can run:
+
+### `git clone https://github.com/vickzil/DevHire-project.git`
+
+### Installation
+
+Once project clone is successful, Install `dependencies` of this project by:
+
+```cli
+npm install
+```
 
 ## Available Scripts
 

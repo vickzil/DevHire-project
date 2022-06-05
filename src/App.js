@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import MyRoutes from "./router/MyRoutes";
+import "./assets/css/style.css";
+import { useDispatch } from "react-redux";
+import { useLayoutEffect } from "react";
+import { getResources } from "./store/settings/actions";
+import { getAllDevelopers } from "./store/developers/actions";
+import { setFavourities } from "./store/developers/developersSlice";
+import CurrencyModal from "./components/modals/CurrencyModal";
 
-function App() {
+const App = () => {
+  const dispatch = useDispatch();
+
+  useLayoutEffect(() => {
+    if (sessionStorage.favourites) {
+      dispatch(setFavourities(JSON.parse(sessionStorage.favourites)));
+    }
+
+    dispatch(getAllDevelopers());
+    dispatch(getResources());
+  }, [dispatch]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MyRoutes />
+      <CurrencyModal />
+    </>
   );
-}
+};
 
 export default App;

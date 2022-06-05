@@ -1,0 +1,120 @@
+.devHire-siderbar {
+  width: 14.5rem;
+  padding-bottom: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  padding: 20px 0px 120px;
+  z-index: 6;
+  background-color: #fff;
+  transition: all 300ms ease-in-out;
+  text-align: center;
+  border-right: 1px solid #e5e5e5;
+}
+
+.devHire-sidebar-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(58, 56, 56, 0.507);
+  z-index: 5;
+  transition: all 0.2s ease;
+  display: none;
+  cursor: pointer;
+}
+
+.devHire-siderbar .devHire-siderbar-scroll {
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.devHire-siderbar .devHire-siderbar-scroll::-webkit-scrollbar {
+  width: 0px !important;
+}
+
+.dashboard_logo {
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.dashboard_logo a {
+  text-decoration: none;
+  font-family: var(--mainFontFamily);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+.dashboard_logo a span {
+  color: var(--mainBlueColor);
+}
+
+.devHire-siderbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.devHire-siderbar .metismenu > li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.devHire-siderbar .metismenu > li a {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 15px;
+  transition: all 300ms ease-in-out;
+  padding: 0px 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  color: #9f9f9f;
+}
+
+.devHire-siderbar .metismenu > li a:hover {
+  transform: scale(0.98);
+}
+
+.devHire-siderbar .metismenu > li a.active {
+  border-left: 4px solid var(--mainBlueColor);
+}
+
+.devHire-siderbar .metismenu > li a.active span {
+  color: #14142b;
+}
+
+.devHire-siderbar .metismenu > li a > i {
+  font-size: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  text-align: center;
+  line-height: 1;
+  padding: 4px;
+}
+
+.devHire-siderbar .metismenu > li a.active i {
+  font-size: 11px;
+  background: var(--mainBlueColor);
+  border-radius: 5px;
+  color: #fff;
+  padding: 7px;
+}
