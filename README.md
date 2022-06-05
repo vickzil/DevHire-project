@@ -1,6 +1,8 @@
 # Getting Started
 
-This is a REACT Assessment Application for DevHire. It is responsive and API featured.
+This is a REACT Assessment Application for TechMadeEazy Solutions Limited. It is responsive and API featured.
+
+DevHire is a marketplace of top developers, where you can hire one or More developers
 
 PROJECT URL: https://devhire-project.netlify.app/
 
