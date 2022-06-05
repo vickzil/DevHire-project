@@ -2,6 +2,8 @@
 
 This is a REACT Assessment Application for DevHire. It is responsive and API featured.
 
+PROJECT URL: https://devhire-project.netlify.app/
+
 ## Clone Project
 
 On your Editor Terminal, you can run:
