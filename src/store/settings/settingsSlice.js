@@ -3,7 +3,7 @@ import { getResources } from "./actions";
 
 const initialState = {
   pageTitle: "",
-  showMobileMenu: true,
+  showMobileMenu: false,
   baseUrL: process.env.REACT_APP_BASEURL || "https://api.terawork.com",
   resources: null,
   loading: true,
